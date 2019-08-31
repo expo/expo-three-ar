@@ -1,0 +1,61 @@
+{
+  "name": "expo-three-ar",
+  "version": "0.0.0",
+  "sideEffects": true,
+  "description": "Utilities for using THREE.js with Expo AR",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "homepage": "https://github.com/expo/expo-three-ar#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/expo/expo-three-ar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/expo/expo-three-ar/issues"
+  },
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "contributors": [],
+  "keywords": [
+    "three.js",
+    "three",
+    "gaming",
+    "graphics",
+    "opengl",
+    "gl",
+    "expo",
+    "arkit",
+    "react",
+    "react-native"
+  ],
+  "author": "Evan Bacon <bacon@expo.io> (https://github.com/evanbacon)",
+  "license": "MIT",
+  "dependencies": {
+    "@expo/browser-polyfill": "^0.1.0",
+    "color-temperature": "0.2.7",
+    "expo-asset-utils": "^1.0.0",
+    "expo-three": "^4.0.6"
+  },
+  "unimodulePeerDependencies": {
+    "expo-asset": "*",
+    "@unimodules/core": "*",
+    "expo-file-system": "*"
+  },
+  "jest": {
+    "preset": "expo-module-scripts"
+  },
+  "peerDependencies": {
+    "react-native": "*",
+    "three": "^0.108.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.93.22",
+    "expo-module-scripts": "^1.0.1"
+  }
+}
