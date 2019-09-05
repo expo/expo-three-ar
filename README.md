@@ -20,10 +20,12 @@ Import the library into your JavaScript file:
 import * as ThreeAR from 'expo-three-ar';
 ```
 
-#### Enabling AR
+### Enabling AR
 
 - `expo-gl`: call `AR.startAsync(gl)` after `GLView.onContextCreate` has been called.
 - `expo-graphics`: you need to add the `isArEnabled={true}` prop
+
+## API
 
 ### `new BackgroundTexture(renderer: WebGLRenderingContext)`
 
