@@ -38,8 +38,6 @@ feed behind the scene's objects.
 scene.background = new BackgroundTexture(renderer);
 ```
 
-See: [Basic Demo](/example/screens/AR/Basic.js)
-
 ### `new Camera(width: number, height: number, zNear: number, zFar: number)`
 
 extends a [`THREE.PerspectiveCamera`](https://threejs.org/docs/#api/cameras/PerspectiveCamera)
@@ -55,8 +53,6 @@ state automatically.
 // viewport width/height & zNear/zFar
 const camera = new Camera(width, height, 0.01, 1000);
 ```
-
-See: [Basic Demo](/example/screens/AR/Basic.js)
 
 ### `new Light()`
 
@@ -82,8 +78,6 @@ scene.add(shadowLight.target);
 arPointLight.update()
 ```
 
-See: [Model Demo](/example/screens/AR/Model.js)
-
 ### `new MagneticObject()`
 
 A `THREE.Mesh` that sticks to surfaces.
@@ -102,8 +96,6 @@ const screenCenter = new THREE.Vector2(0.5, 0.5);
 magneticObject.update(camera, screenCenter);
 ```
 
-See: [Model Demo](/example/screens/AR/Model.js)
-
 ### `new ShadowFloor()`
 
 A transparent plane that extends `THREE.Mesh` and receives shadows from other meshes.
@@ -120,38 +112,6 @@ const shadowFloor = new ShadowFloor({
 }); // The opacity of the shadow
 ```
 
-See: [Model Demo](/example/screens/AR/Model.js)
-
-### `new CubeTexture()`
-
-Used to load in a texture cube or skybox.
-
-- `assetForDirection`: This function will be called for each of the 6
-  directions.
-  - `({ direction })`: A direction string will be passed back looking for the
-    corresponding image. You can send back: `static resource`, `localUri`,
-    `Expo.Asset`, `remote image url`
-- `directions`: The order that image will be requested in. The default value is:
-  `['px', 'nx', 'py', 'ny', 'pz', 'nz']`
-
-Example:
-
-```js
-const skybox = {
-  nx: require('./nx.jpg'),
-  ny: require('./ny.jpg'),
-  nz: require('./nz.jpg'),
-  px: require('./px.jpg'),
-  py: require('./py.jpg'),
-  pz: require('./pz.jpg'),
-};
-const cubeTexture = new CubeTexture();
-await cubeTexture.loadAsync({
-  assetForDirection: ({ direction }) => skybox[direction],
-});
-scene.background = cubeTexture;
-```
-
 ### `new Points()`
 
 A utility object that renders all the raw feature points.
@@ -162,8 +122,6 @@ const points = new Points();
 points.update();
 ```
 
-See: [Points Demo](/example/screens/AR/Points.js)
-
 ### `new Planes()`
 
 A utility object that renders all the ARPlaneAnchors
@@ -173,8 +131,6 @@ const planes = new Planes();
 // Then call this each frame...
 planes.update();
 ```
-
-See: [Planes Demo](/example/screens/AR/Planes.js)
 
 ## AR Functions
 
