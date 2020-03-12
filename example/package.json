@@ -1,5 +1,4 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -8,14 +7,14 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^34.0.1",
-    "expo-gl": "^6.0.0",
+    "expo": "^36.0.2",
+    "expo-gl": "~8.0.0",
     "expo-graphics": "^1.1.0",
     "expo-three": "^4.0.6",
     "expo-three-ar": "../expo-three-ar-0.0.0.tgz",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
+    "react-native": "^0.61.5",
     "react-native-web": "^0.11.4"
   },
   "devDependencies": {

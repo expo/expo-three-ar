@@ -3,7 +3,6 @@
     "name": "example",
     "slug": "expo-three-ar",
     "privacy": "public",
-    "sdkVersion": "34.0.0",
     "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,16 +11,6 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
-    },
-    "packagerOpts": {
-      "config": "metro.config.js"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true
     }
   }
 }
