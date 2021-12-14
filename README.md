@@ -1,4 +1,6 @@
-[![NPM](https://nodei.co/npm/expo-three-ar.png)](https://nodei.co/npm/expo-three-ar/)
+
+> This package is no longer supported as Expo Go's built-in AR support is no longer supported. This package may be reused in the future if new native package is created. 
+
 
 # expo-three-ar
 
